@@ -18,7 +18,11 @@ npm i
 ```
 
 
-Once the command runs we next run "npx hardhat node", to create a node for the program since we will be running it on a webpage through a local host, once the node is created. 
+Once the command runs we next run 
+``` shell
+npx hardhat node
+```
+ to create a node for the program since we will be running it on a webpage through a local host, once the node is created. 
 We run
 ``` shell 
 npx hardhat run --network localhost scripts/deploy.js
