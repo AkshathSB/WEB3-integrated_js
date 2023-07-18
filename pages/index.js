@@ -59,17 +59,17 @@ export default function HomePage() {
     }
   }
 
-  const deposit = async() => {
+  const multiply = async() => {
     if (atm) {
-      let tx = await atm.deposit(1);
+      let tx = await atm.multiply13(14);
       await tx.wait()
       getBalance();
     }
   }
 
-  const withdraw = async() => {
+  const divide = async() => {
     if (atm) {
-      let tx = await atm.withdraw(1);
+      let tx = await atm.divide13(26);
       await tx.wait()
       getBalance();
     }
@@ -93,9 +93,9 @@ export default function HomePage() {
     return (
       <div>
         <p>Your Account: {account}</p>
-        <p>Your Balance: {balance}</p>
-        <button onClick={deposit}>Deposit 1 ETH</button>
-        <button onClick={withdraw}>Withdraw 1 ETH</button>
+        <p>Your Result: {balance}</p>
+        <button onClick={multiply}>multiply by 13</button>
+        <button onClick={divide}>divide by 13</button>
       </div>
     )
   }
@@ -104,11 +104,13 @@ export default function HomePage() {
 
   return (
     <main className="container">
-      <header><h1>Welcome to the Metacrafters ATM!</h1></header>
+      <header><h1>Playing With the number 13</h1></header>
       {initUser()}
       <style jsx>{`
         .container {
-          text-align: center
+          text-align: center;
+          color: red;
+          background-color: aliceblue;
         }
       `}
       </style>
