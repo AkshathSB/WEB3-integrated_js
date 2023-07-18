@@ -12,7 +12,12 @@ In the project, I have depicted how the web3 would work/works and written smart 
 
 ### Executing program
 
-To run the program, initially we need to open the "index.js" file and open and new terminal. Once a new terminal is created we run the "npm i" command, once the command runs we next run "npx hardhat node", to create a node for the program since we will be running it on a webpage through a local host, once the node is created we run "npx hardhat run --network localhost scripts/deploy.js", to provide a localhost for the program to be able to execute. Then once "npm run dev" command is ran it runs the program at a localhost with a portnumber. In the webpage, there's a prompt to connect a metamask, once the metamask is connected through its address. The two functions "multiply13" & "divide13" are implemented in the form of buttons. Once they are "clicked" through the metamask UI it asks for conformation and the result of the functions is updated on the webpage. 
+To run the program, initially we need to open the "index.js" file and open and new terminal. 
+Once a new terminal is created we run the "npm i" command.
+Once the command runs we next run "npx hardhat node", to create a node for the program since we will be running it on a webpage through a local host, once the node is created. 
+We run "npx hardhat run --network localhost scripts/deploy.js", to provide a localhost for the program to be able to execute. 
+Then once "npm run dev" command is ran it runs the program at a localhost with a portnumber. 
+In the webpage, there's a prompt to connect a metamask, once the metamask is connected through its address. The two functions "multiply13" & "divide13" are implemented in the form of buttons. Once they are "clicked" through the metamask UI it asks for conformation and the result of the functions is updated on the webpage. 
 
 
 
@@ -25,8 +30,7 @@ Akshath.SB
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE.md file for details
-
+Project license identifier - Unlicensed.
 
 
 
